@@ -35,10 +35,11 @@ class Student
       self.update
     else
       sql = <<-SQL
-        INSERT INTO (name, age)
+        INSERT INTO (name, grade)
         VALUES (?, ?)
       SQL
-    DB[:conn].execute(sql, self.name, self.age, )
+    DB[:conn].execute(sql, self.name, self.grade)
+    @id = 
   end
 
 
