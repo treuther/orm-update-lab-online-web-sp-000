@@ -51,7 +51,7 @@ class Student
   
   def self.new_from_db
     new_student = self.new
-    new_student
+    new_student.id = 
   end
 
 
