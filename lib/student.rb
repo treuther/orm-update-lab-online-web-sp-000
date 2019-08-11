@@ -37,6 +37,8 @@ class Student
       sql = <<-SQL
         INSERT INTO (name, age)
         VALUES (?, ?)
+      SQL
+    DB[:conn].execute(sql, self.name, self.age, )
   end
 
 
